@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // // 1 //
+        // for(let Meh = 1 ; Meh <= 50 ; Meh++){
+        //     console.log(Meh)
+        // }
+        // // 2 //
+        // for(let Peh = 1; Peh <= 50; Peh += 2){
+        //     console.log(Peh)
+        // }
+        // // 3 //
+        // for(let Weh = 2; Weh <= 50; Weh += 25){
+        //     console.log(Weh)
+        // }
+        // 4 //
+    // for(let Qeh = 1 ; Qeh <= 50 ; Qeh++){
+
+    //     if (Qeh % 2 == 0){
+    //         hasil = `${Qeh} bilangan genap`
+    //     }else{
+    //         hasil = `${Qeh} bilangan ganjil`
+    //     }
+    //     console.log(hasil)
+    // }
+    // 5 //
+var bilangan = [];
+
+for (var i = 0; i < 20; i++) {
+    var input = parseFloat(prompt("Masukkan bilangan ke-" + (i + 1) + ":"));
+
+    bilangan.push(input);
+}
+var terbesar = bilangan[0];
+var terkecil = bilangan[0];
+var total = bilangan[0];
+
+for (var i = 1; i < bilangan.length; i++) {
+    if (bilangan[i] > terbesar) {
+        terbesar = bilangan[i];
+    }
+
+    if (bilangan[i] < terkecil) {
+        terkecil = bilangan[i];
+    }
+
+    total += bilangan[i];
+}
+
+
+var rataRata = total / bilangan.length;
+
+
+console.log("Bilangan Terbesar: " + terbesar);
+console.log("Bilangan Terkecil: " + terkecil);
+console.log("Rata-rata: " + rataRata);
+    
+    </script>
+</body>
+</html>
